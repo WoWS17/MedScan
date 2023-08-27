@@ -15,7 +15,13 @@
 
 ## ⚡ Quickstart
 ```shell
-$ git clone https://github.com/triglie/fmap.git #mettere l'URL del mio progetto
+$ git clone https://github.com/WoWS17/MedScan.git
+
+$ cd ./kafka/setup
+
+$ wget https://dlcdn.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
+
+$ cd ../../
 
 $ echo 'export AZURE_OPENAI_ENDPOINT=<Your OpenAI Endpoint>' >> ~/.bashrc
 
