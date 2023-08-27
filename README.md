@@ -2,8 +2,8 @@
 <p align="center">Medical feature extractor. 
 </p><br>
 
-<img align="center" src="./images/cover-removebg-preview.png" height=200 >
-
+<p align="center"><img src="./images/cover-removebg-preview.png" > 
+</p><br>
 
 ## :memo: Requirements
  - Docker & Docker Compose
