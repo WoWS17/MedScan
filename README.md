@@ -1,7 +1,8 @@
 <h1 align="center">MedScan (Medical Scanner)</h1>
 <p align="center">Medical feature extractor. 
-    <img align="center" src="./images/cover-removebg-preview.png" height=200 >
 </p><br>
+
+<img align="center" src="./images/cover-removebg-preview.png" height=200 >
 
 
 ## :memo: Requirements
