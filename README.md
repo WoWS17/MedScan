@@ -89,4 +89,4 @@ Kibana is an free and open frontend application that sits on top of the  Elastic
 
 
 ## Authors 
-[Luigi Seminara](https://github.com/WoWS17)
+[Giuseppe Coco](https://github.com/WoWS17)
