@@ -52,7 +52,7 @@ Logstash is a free and open server-side data processing pipeline that  ingests d
 
 
 
-## <img src="./images/kafka-logo.png"> Kafka
+## <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg"> Kafka
 ### What is it?
 Apache Kafka is an open-source event streaming platform that enables the management and processing of real-time data streams. It is designed for scalability, reliability and speed, enabling the transmission of large volumes of data between applications and systems. Kafka operates on a publish-subscribe model, where producers send data into containers called topics and consumers subscribe to the topics to receive the data.
 
