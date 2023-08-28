@@ -1,6 +1,16 @@
 <h1 align="center">MedScan (Medical Scanner)</h1>
-<p align="center">Medical feature extractor. 
-</p><br>
+MedScan is a real-time system that ingests, stores, processes and indexes medical reports. 
+
+Data storage and processing take place in a distributed manner through the use of Kafka and Spark respectively.
+
+In particular, information such as the status of examined anatomical structures, medical diagnosis and other information related to the patient's health is to be extracted from the documents.
+
+The **next step** in this project would be to make the extraction customisable; 
+
+Ideally, any doctor specialising in any field of medicine could upload their reports and specify which parameters they would like the model to search for.
+
+The power of ChatGPT-4 was used to extract the features.
+
 
 <p align="center"><img src="./images/cover-removebg-preview.png" > 
 </p><br>
