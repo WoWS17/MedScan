@@ -75,7 +75,9 @@ Apache Spark is a lightning-fast **unified analytics engine** for big data and m
 ### What is it?
 Kibana is an free and open frontend application that sits on top of the  Elastic Stack, providing search and data visualization capabilities for  data indexed in Elasticsearch. Commonly known as the charting tool for  the Elastic Stack (previously referred to as the ELK Stack after  Elasticsearch, Logstash, and Kibana), Kibana also acts as the user  interface for monitoring, managing, and securing an Elastic Stack  cluster — as well as the centralized hub for built-in solutions  developed on the Elastic Stack. Developed in 2013 from within the  Elasticsearch community, Kibana has grown to become the window into the  Elastic Stack itself, offering a portal for users and companies.
 
-%inserire screenshot dashboard
+<img src="./images/dashboard-1.png">
+<img src="./images/dashboard-2.png">
+<img src="./images/dashboard-3.png">
 
 
 ## Useful links 
