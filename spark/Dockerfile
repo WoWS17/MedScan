@@ -7,6 +7,8 @@ ENV PATH $SPARK_DIR/bin:$PATH
 
 RUN pip install pyspark elasticsearch numpy openai
 
+RUN mkdir /shared-data && chmod 777 /shared-data
+
 COPY code/* ${SPARK_DIR}/
 
 ENTRYPOINT [ "/opt/spark/bin/spark-submit" , \

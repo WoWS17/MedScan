@@ -15,6 +15,7 @@ services:
     ports:
       - "2181:2181"
 
+
   kafkaserver:
     container_name: kafkaServer
     build: 
@@ -75,6 +76,8 @@ services:
         condition: service_completed_successfully
       spark:
         condition: service_started
+    volumes:
+      - shared-data:/shared-data
 
 
   spark: 
@@ -95,6 +98,8 @@ services:
         condition: service_healthy # con questa condizione, il collegamento tra spark e ES sembra funzionare
       kafkatopic: 
         condition: service_completed_successfully
+    volumes:
+      - shared-data:/shared-data
       
   elasticsearch:
     container_name: elasticsearch
@@ -142,3 +147,5 @@ networks:
      config:
        - subnet: 10.0.100.1/24
 
+volumes:
+  shared-data:
