@@ -1,8 +1,9 @@
 <h1 align="center">MedScan (Medical Scanner)</h1>
 <p align="center">Medical feature extractor. 
-    <img align="center" src="./images/cover-removebg-preview.png" height=200 >
 </p><br>
 
+<p align="center"><img src="./images/cover-removebg-preview.png" > 
+</p><br>
 
 ## :memo: Requirements
  - Docker & Docker Compose
@@ -14,7 +15,13 @@
 
 ## ⚡ Quickstart
 ```shell
-$ git clone https://github.com/triglie/fmap.git #mettere l'URL del mio progetto
+$ git clone https://github.com/WoWS17/MedScan.git
+
+$ cd ./kafka/setup
+
+$ wget https://dlcdn.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz
+
+$ cd ../../
 
 $ echo 'export AZURE_OPENAI_ENDPOINT=<Your OpenAI Endpoint>' >> ~/.bashrc
 
@@ -82,4 +89,4 @@ Kibana is an free and open frontend application that sits on top of the  Elastic
 
 
 ## Authors 
-[Luigi Seminara](https://github.com/WoWS17)
+[Giuseppe Coco](https://github.com/WoWS17)
