@@ -69,59 +69,12 @@ GUIDELINES_PROMPT = (
 "Output : "
 )
 
-'''ES_MAPPING = {
-  "mappings": {
-    "properties": {
-        "Emiscroto destro": {
-            "type": "nested",
-            "properties": {
-                "Testicolo": {
-                    "type": "nested",
-                    "properties": {
-                        "Sede anatomica": {"type": "text"},
-                        "Volume": {"type": "double"},
-                        "Dimensioni": {"type": "text"},
-                        "Ecostruttura": {"type": "text"}
-                    }
-                },
-                "Epididimo": {
-                    "type": "nested",
-                    "properties": {
-                        "Aspetto ecografico": {"type": "text"}
-                    }
-                },
-                "Canale inguinale": {"type": "text"}
-            }
-        },
-        "Emiscroto sinistro": {
-            "type": "nested",
-            "properties": {
-                "Testicolo": {
-                    "type": "nested",
-                    "properties": {
-                        "Sede anatomica": {"type": "text"},
-                        "Volume": {"type": "double"},
-                        "Dimensioni": {"type": "text"},
-                        "Ecostruttura": {"type": "text"}
-                    }
-                },
-                "Epididimo": {
-                    "type": "nested",
-                    "properties": {
-                        "Aspetto ecografico": {"type": "text"}
-                    }
-                },
-                "Canale inguinale": {"type": "text"}
-            }
-        }
-    }
-  }
-}'''
+ENGINE = "ecos-extract"
 
 def setOpenAIConf():
     openai.api_type = "azure"
     openai.api_base = os.getenv("AZURE_OPENAI_ENDPOINT")
-    openai.api_version = "2023-03-15-preview"
+    openai.api_version = "2023-07-01-preview"
     openai.api_key = os.getenv("AZURE_OPENAI_KEY")
 
 def create_elastic_index():
@@ -136,7 +89,7 @@ def create_elastic_index():
 def requestToChatGPT(user_prompt):
    setOpenAIConf()
    return openai.ChatCompletion.create(
-      engine="healthcare-features-extractor",
+      engine=ENGINE,
       messages = [
         {"role":"system","content":SYSTEM_PROMPT},
         {"role":"user","content":USER_PROMPT_1},
@@ -194,8 +147,6 @@ signal_file_path = "/shared-data/spark-ready"
 os.mknod(signal_file_path)
 # Imposta i permessi del file per consentire a logstash di cancellarlo
 os.chmod(signal_file_path, stat.S_IRWXU | stat.S_IRWXG | stat.S_IRWXO)
-
-print("StreamReader creato")
 
 # Define the schema of the JSON data from Kafka
 json_schema = StructType() \

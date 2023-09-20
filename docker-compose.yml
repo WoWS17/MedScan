@@ -101,6 +101,7 @@ services:
     volumes:
       - shared-data:/shared-data
       
+
   elasticsearch:
     container_name: elasticsearch
     build: 
@@ -124,6 +125,7 @@ services:
       interval: 30s
       timeout: 30s
       retries: 3
+  
   
   kibana:
     build: 

@@ -39,7 +39,7 @@ $ echo 'export AZURE_OPENAI_KEY=<Your OpenAI Secret Key>' >> ~/.bashrc
 
 $ source ~/.bashrc
 
-$ docker compose up
+$ docker compose up --build
 ```
 
 
