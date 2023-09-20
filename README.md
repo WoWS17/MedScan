@@ -1,5 +1,5 @@
-<h1 align="center">ECOS (Extracting Content Output Sonogram)</h1>
-ECOS is a real-time system that ingests, stores, processes and indexes medical reports. 
+<h1 align="center">MedScan (Medical Scanner AI)</h1>
+MedScan is a real-time system that ingests, stores, processes and indexes medical reports. 
 
 Data storage and processing take place in a distributed manner through the use of Kafka and Spark respectively.
 
